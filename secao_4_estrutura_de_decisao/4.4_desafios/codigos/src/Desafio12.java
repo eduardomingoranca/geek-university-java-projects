@@ -14,9 +14,7 @@ public class Desafio12 {
         System.out.print("Informe um numero inteiro: ");
         int numero = scanner.nextInt();
 
-        String logaritmo = (numero <= 0) ? "numero invalido!" : "o logaritmo eh: " + log(numero);
-
-        System.out.println(logaritmo);
+        System.out.println((numero <= 0) ? "numero invalido!" : "o logaritmo eh: " + log(numero));
 
         scanner.close();
     }

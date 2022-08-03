@@ -15,11 +15,7 @@ public class Desafio03 {
         System.out.print("Informe um numero real: ");
         double numero = scanner.nextDouble();
 
-        if (numero > 0) {
-            System.out.println(sqrt(numero));
-        } else {
-            System.out.println(pow(numero, 2));
-        }
+        System.out.println((numero > 0) ? sqrt(numero) : pow(numero, 2));
 
         scanner.close();
     }

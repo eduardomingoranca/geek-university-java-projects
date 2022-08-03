@@ -19,9 +19,7 @@ public class Desafio06 {
             numeros.add(numero);
         }
 
-        int maior = Math.max(numeros.get(0) , numeros.get(1));
-        System.out.println("maior: " + maior);
-
+        System.out.println("maior: " + Math.max(numeros.get(0) , numeros.get(1)));
         System.out.println("diferenca: " + (numeros.get(0) - numeros.get(1)));
 
         scanner.close();

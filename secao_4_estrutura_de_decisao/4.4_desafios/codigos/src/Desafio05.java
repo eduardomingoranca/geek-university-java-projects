@@ -12,9 +12,7 @@ public class Desafio05 {
         System.out.print("Informe um numero inteiro: ");
         int numero = scanner.nextInt();
 
-        String resultado = (numero % 2 == 0) ? "numero par" : "numero impar";
-
-        System.out.println(resultado);
+        System.out.println((numero % 2 == 0) ? "numero par" : "numero impar");
 
         scanner.close();
     }

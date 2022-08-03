@@ -15,12 +15,7 @@ public class Desafio02 {
         System.out.print("Informe um numero: ");
         double numero = scanner.nextDouble();
 
-        if (numero > 0) {
-            System.out.println(sqrt(numero));
-        } else {
-            System.out.println("Numero invalido!");
-        }
-
+        System.out.println((numero > 0) ? "Raiz Quadrada: " + sqrt(numero) : "numero invalido!");
 
         scanner.close();
     }

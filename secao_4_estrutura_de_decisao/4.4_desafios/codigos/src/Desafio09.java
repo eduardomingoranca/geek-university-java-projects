@@ -1,4 +1,3 @@
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 /**
@@ -17,10 +16,8 @@ public class Desafio09 {
         System.out.print("Informe o valor da prestacao do emprestimo: R$ ");
         double emprestimo = scanner.nextDouble();
 
-        String concederEmprestimo = (emprestimo > (salario * 0.20)) ? "Emprestimo nao concedido"
-                : "Emprestimo concedido";
-
-        System.out.println(concederEmprestimo);
+        System.out.println((emprestimo > (salario * 0.20)) ? "Emprestimo nao concedido"
+                : "Emprestimo concedido");
 
         scanner.close();
     }

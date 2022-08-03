@@ -21,13 +21,8 @@ public class Desafio01 {
            numeros.add(numero);
         }
 
-        if (Objects.equals(numeros.get(0), numeros.get(1)))
-            System.out.println("Numeros iguais");
-        else {
-            int maior = max(numeros.get(0), numeros.get(1));
-
-            System.out.println(maior);
-        }
+        System.out.println((Objects.equals(numeros.get(0), numeros.get(1))) ? "numeros iguais!"
+                : "MAIOR: " + max(numeros.get(0), numeros.get(1)));
 
         scanner.close();
     }

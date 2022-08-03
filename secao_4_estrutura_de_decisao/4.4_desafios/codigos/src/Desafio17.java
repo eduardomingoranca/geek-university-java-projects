@@ -19,12 +19,8 @@ public class Desafio17 {
         System.out.print("Informe a altura: ");
         double altura = scanner.nextDouble();
 
-        if (baseMaior < 0 || baseMenor < 0) {
-            System.out.println("numero invalido!");
-        } else {
-            double a = ((baseMaior + baseMenor) * altura) / 2.0;
-            System.out.println("A area do trapezio eh: " + a);
-        }
+        System.out.println((baseMaior <= 0 || baseMenor <= 0) ? "numero invalido!" : "A area do trapezio eh: " +
+                ((baseMaior + baseMenor) * altura) / 2.0);
 
         scanner.close();
     }

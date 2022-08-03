@@ -19,14 +19,8 @@ public class Desafio07 {
             numeros.add(numero);
         }
 
-        boolean igual = numeros.get(0).equals(numeros.get(1));
-
-        if (igual) {
-            System.out.println("numeros iguais");
-        } else {
-            int maior = Math.max(numeros.get(0) , numeros.get(1));
-            System.out.println("maior: " + maior);
-        }
+        System.out.println((numeros.get(0).equals(numeros.get(1))) ? "numeros iguais!"
+                : "maior: " + Math.max(numeros.get(0) , numeros.get(1)));
 
         scanner.close();
     }
