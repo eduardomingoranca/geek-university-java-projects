@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static java.lang.Math.max;
+
 /**
  * Faca um programa que receba dois numeros e mostre o maior. Se por acaso, os dois
  * numeros forem iguais, imprima a mensagem numeros iguais.
@@ -20,7 +22,7 @@ public class Desafio07 {
         }
 
         System.out.println((numeros.get(0).equals(numeros.get(1))) ? "numeros iguais!"
-                : "maior: " + Math.max(numeros.get(0) , numeros.get(1)));
+                : "maior: " + max(numeros.get(0) , numeros.get(1)));
 
         scanner.close();
     }

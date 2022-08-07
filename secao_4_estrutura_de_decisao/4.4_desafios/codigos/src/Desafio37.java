@@ -40,13 +40,13 @@ public class Desafio37 {
         if (tempoMinutos >= 1 && tempoMinutos <= 60) {
             preco = 1.0;
             System.out.println("O valor a ser pago sera de R$ " + preco);
-        } else if (tempoMinutos > 60 && tempoMinutos <= 120) {
+        } else if (tempoMinutos <= 120) {
             preco = 2.0;
             System.out.println("O valor a ser pago sera de R$ " + preco);
-        } else if (tempoMinutos > 120 && tempoMinutos <= 180) {
+        } else if (tempoMinutos <= 180) {
             preco = 4.2;
             System.out.println("O valor a ser pago sera de R$ " + preco);
-        } else if (tempoMinutos > 180 && tempoMinutos <= 240) {
+        } else if (tempoMinutos <= 240) {
             preco = 5.6;
             System.out.println("O valor a ser pago sera de R$ " + preco);
         } else if (tempoMinutos > 240) {

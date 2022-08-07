@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static java.lang.Math.max;
+
 /**
  * Escreva um programa que, dados dois numeros inteiros, mostre na tela o maior deles,
  * assim como a diferenca existente entre ambos.
@@ -19,7 +21,7 @@ public class Desafio06 {
             numeros.add(numero);
         }
 
-        System.out.println("maior: " + Math.max(numeros.get(0) , numeros.get(1)));
+        System.out.println("maior: " + max(numeros.get(0) , numeros.get(1)));
         System.out.println("diferenca: " + (numeros.get(0) - numeros.get(1)));
 
         scanner.close();
