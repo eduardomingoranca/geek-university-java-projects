@@ -9,8 +9,7 @@ public class Desafio10 {
         Scanner scanner = new Scanner(System.in);
 
         int soma = 0;
-        for (int i = 1; i <= 50; i++)
-            if (i % 2 == 0) soma += i;
+        for (int i = 1; i <= 50; i++) if (i % 2 == 0) soma += i;
 
         System.out.println("SOMA = " + soma);
 

@@ -12,8 +12,7 @@ public class Desafio09 {
         System.out.print("Informe um numero: ");
         int n = scanner.nextInt();
 
-        for (int i = 1; i <= n; i++)
-            if (i % 2 != 0) System.out.print(i + " ");
+        for (int i = 1; i <= n; i++) if (i % 2 != 0) System.out.print(i + " ");
 
         scanner.close();
     }
