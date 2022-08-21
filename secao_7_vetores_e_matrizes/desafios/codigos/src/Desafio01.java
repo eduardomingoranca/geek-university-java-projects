@@ -10,7 +10,7 @@
 public class Desafio01 {
 
     public static void main(String[] args) {
-        int A[] = { 1, 0, 5, -2, -5, 7 };
+        int[] A = { 1, 0, 5, -2, -5, 7 };
 
         int soma = A[0] + A[1] + A[5];
 
