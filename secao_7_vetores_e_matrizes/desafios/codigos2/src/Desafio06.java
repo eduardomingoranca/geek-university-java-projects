@@ -36,9 +36,9 @@ public class Desafio06 {
         }
 
         for (double[] doubles : vet) {
-            for (int j = 0; j < vet.length; j++) {
+            for (int j = 0; j < vet.length; j++)
                 System.out.print(" " + doubles[j]);
-            }
+
             System.out.println();
         }
 

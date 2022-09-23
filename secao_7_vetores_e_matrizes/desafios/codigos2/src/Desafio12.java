@@ -13,7 +13,7 @@ public class Desafio12 {
 
         for (int i = 0; i < matz.length; i++) {
             for (int j = 0; j < matz.length; j++) {
-                System.out.print("MATRIZ[" + i + "][" + i + "]: ");
+                System.out.print("MATRIZ[" + i + "][" + j + "]: ");
                 matz[i][j] = scanner.nextDouble();
             }
         }
@@ -25,9 +25,9 @@ public class Desafio12 {
         }
 
         for (double[] doubles : transposta) {
-            for (int j = 0; j < transposta[0].length; j++) {
+            for (int j = 0; j < transposta[0].length; j++)
                 System.out.print(doubles[j] + "\t");
-            }
+
             System.out.println();
         }
 

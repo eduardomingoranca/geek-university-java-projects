@@ -12,7 +12,7 @@ public class Desafio01 {
 
         for (int i = 0; i < matz.length; i++) {
             for (int j = 0; j < matz.length; j++) {
-                System.out.print("MATRIZ[" + i + "][" + i + "]: ");
+                System.out.print("MATRIZ[" + i + "][" + j + "]: ");
                 matz[i][j] = scanner.nextDouble();
             }
         }
