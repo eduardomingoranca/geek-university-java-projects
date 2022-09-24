@@ -30,7 +30,7 @@ public class Desafio21 {
 
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {
-                System.out.println("M1[" + i + "][" + j + "]:");
+                System.out.println("M2[" + i + "][" + j + "]:");
                 m2[i][j] = scanner.nextInt();
             }
         }

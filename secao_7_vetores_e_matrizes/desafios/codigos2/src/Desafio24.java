@@ -13,10 +13,10 @@ public class Desafio24 {
 
         int[][] m = new int[20][20];
 
-        int a = 0;
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
-                m[i][j] = a++;
+                System.out.print("M [" + i + "][" + j + "]: ");
+                m[i][j] = scanner.nextInt();
             }
         }
 

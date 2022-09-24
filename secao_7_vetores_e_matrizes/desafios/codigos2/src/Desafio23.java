@@ -13,10 +13,10 @@ public class Desafio23 {
         double[][] a = new double[3][3];
         double[][] b = new double[3][3];
 
-        double c = 0;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                a[i][j] = c++;
+                System.out.print("A [" + i + "][" + j + "]: ");
+                a[i][j] = scanner.nextInt();
             }
         }
 
