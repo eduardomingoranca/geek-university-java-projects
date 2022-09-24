@@ -24,16 +24,15 @@ public class Desafio15 {
             }
         }
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 10; j++) {
-                if (gabarito[j].equals(multiplaEscolha[0][j])) pontuacao1++;
-                if (gabarito[j].equals(multiplaEscolha[1][j])) pontuacao2++;
-                if (gabarito[j].equals(multiplaEscolha[2][j])) pontuacao3++;
-                if (gabarito[j].equals(multiplaEscolha[3][j])) pontuacao4++;
-                if (gabarito[j].equals(multiplaEscolha[4][j])) pontuacao5++;
-            }
+        for (int i = 0; i < 10; i++) {
+            if (gabarito[i].equals(multiplaEscolha[0][i])) pontuacao1++;
+            if (gabarito[i].equals(multiplaEscolha[1][i])) pontuacao2++;
+            if (gabarito[i].equals(multiplaEscolha[2][i])) pontuacao3++;
+            if (gabarito[i].equals(multiplaEscolha[3][i])) pontuacao4++;
+            if (gabarito[i].equals(multiplaEscolha[4][i])) pontuacao5++;
         }
 
+        System.out.println();
         System.out.println(" ALUNO [1] ");
         System.out.print(" " + Arrays.toString(multiplaEscolha[0]));
         System.out.println(" PONTUACAO: " + pontuacao1);
