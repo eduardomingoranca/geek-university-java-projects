@@ -15,16 +15,18 @@ public class Desafio12 {
         int numero = scanner.nextInt();
 
         if (numero <= 0) System.out.println("NUMERO INVALIDO!");
-        else {
-            int soma = 0;
-            while (numero > 0) {
-                soma += numero % 10;
-                numero /= 10;
-            }
-            System.out.println("A soma dos algarismos eh: " + soma);
-        }
+        else System.out.println("A soma dos algarismos eh: " + somaAlgarismos(numero));
 
         scanner.close();
+    }
+
+    private static int somaAlgarismos(int numero) {
+        int soma = 0;
+        while (numero > 0) {
+            soma += numero % 10;
+            numero /= 10;
+        }
+        return soma;
     }
 
 }

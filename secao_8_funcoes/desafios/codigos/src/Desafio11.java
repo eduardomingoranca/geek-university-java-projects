@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static java.lang.Double.parseDouble;
+
 /**
  * Elabore uma funcao que receba tres notas de um aluno como parametros e uma letra.
  * Se a letra for A, a funcao devera calcular a media aritmetica das notas do aluno;
@@ -15,7 +17,7 @@ public class Desafio11 {
         List<Double> notas = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
             System.out.print("Informe a [" + (i+1) + "] nota: ");
-            double nota = scanner.nextDouble();
+            double nota = parseDouble(scanner.nextLine());
             notas.add(nota);
         }
 
