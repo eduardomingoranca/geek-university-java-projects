@@ -15,17 +15,17 @@ public class Desafio25 {
         System.out.print("N: ");
         int n = scanner.nextInt();
 
-        serie(n);
+        System.out.println("S = " + serie(n));
 
         scanner.close();
     }
 
-    private static void serie(int n) {
+    private static double serie(int n) {
         double s = 0;
         for (int i = 1; i <= n; i++)
             s += (pow(n, 2) + 1) / (n + 3);
 
-        System.out.println("S = " + s);
+        return s;
     }
 
 }

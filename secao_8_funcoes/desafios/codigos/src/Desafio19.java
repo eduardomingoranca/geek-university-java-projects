@@ -11,20 +11,22 @@ public class Desafio19 {
         System.out.print("Informe um numero inteiro: ");
         int numero = scanner.nextInt();
 
-        fatorMaiorPrimo(numero);
+        System.out.printf("FATOR MAIOR PRIMO DO NUMERO %d EH %d", numero, fatorMaiorPrimo(numero));
 
         scanner.close();
     }
 
-    private static void fatorMaiorPrimo(int numero) {
+    private static int fatorMaiorPrimo(int numero) {
+        int a = 0;
         for (int i = numero; i > 1; i--) {
             if (numeroPrimo(i)) {
                 if (numero % i == 0) {
-                    System.out.printf("FATOR MAIOR PRIMO DO NUMERO %d EH %d", numero, i);
-                    break;
+                    a = i;
+                    return a;
                 }
             }
         }
+        return a;
     }
 
     private static boolean numeroPrimo(int i) {
@@ -35,4 +37,5 @@ public class Desafio19 {
 
         return true;
     }
+
 }

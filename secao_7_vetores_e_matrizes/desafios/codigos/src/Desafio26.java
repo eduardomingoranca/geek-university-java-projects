@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-import static java.lang.Math.pow;
-import static java.lang.Math.sqrt;
+import static java.lang.Math.*;
 
 /**
  * Faca um programa que calcule o desvio padrao de um vetor v contento n = 10 numeros,
@@ -14,23 +13,20 @@ public class Desafio26 {
         Scanner scanner = new Scanner(System.in);
 
         int n = 10;
+        int s = 0;
+        double sigma = 0;
         double[] vet = new double[n];
-        double desvioPadrao = 0.0;
 
         for (int i = 0; i < vet.length; i++) {
-            System.out.print("Informe o [" + (i + 1) + "] numero: ");
+            System.out.print("VET[" + (i+1) + "]: ");
             vet[i] = scanner.nextDouble();
         }
 
-        double mean = vet[0];
-        for (int i = 0; i < n; i++) mean += vet[i];
+        for (double v : vet) s += v;
 
-        for (int i = 0; i < n; i++)
-            desvioPadrao += pow((vet[i] - mean), 2.0);
+        for (double v : vet) sigma = pow(v - (double) s / vet.length, 2.0);
 
-        double m = sqrt(desvioPadrao / n);
-
-        System.out.println("DESVIO PADRAO: " + m);
+        System.out.println(" DESVIO PADRAO: " + sqrt(1.0 / n * sigma));
 
         scanner.close();
     }

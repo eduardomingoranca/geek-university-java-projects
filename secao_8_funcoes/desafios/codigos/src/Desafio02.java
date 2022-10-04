@@ -1,5 +1,3 @@
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Scanner;
 
 import static java.time.LocalDate.now;
@@ -14,27 +12,29 @@ public class Desafio02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        dataTextual(now().getDayOfMonth(), now().getMonthValue(), now().getYear());
+        System.out.println(dataTextual(now().getDayOfMonth(), now().getMonthValue(), now().getYear()));
 
         scanner.close();
     }
 
-    private static void dataTextual(int dayOfMonth, int monthValue, int year) {
+    private static String dataTextual(int dayOfMonth, int monthValue, int year) {
+        String data = "";
         switch (monthValue) {
-            case 1 -> System.out.println(dayOfMonth + " de janeiro de " + year);
-            case 2 -> System.out.println(dayOfMonth + " de fevereiro de " + year);
-            case 3 -> System.out.println(dayOfMonth + " de marco de " + year);
-            case 4 -> System.out.println(dayOfMonth + " de abril de " + year);
-            case 5 -> System.out.println(dayOfMonth + " de maio de " + year);
-            case 6 -> System.out.println(dayOfMonth + " de junho de " + year);
-            case 7 -> System.out.println(dayOfMonth + " de julho de " + year);
-            case 8 -> System.out.println(dayOfMonth + " de agosto de " + year);
-            case 9 -> System.out.println(dayOfMonth + " de setembro de " + year);
-            case 10 -> System.out.println(dayOfMonth + " de outubro de " + year);
-            case 11 -> System.out.println(dayOfMonth + " de novembro de " + year);
-            case 12 -> System.out.println(dayOfMonth + " de dezembro de " + year);
-            default -> System.out.println("NUMERO INVALIDO!");
+            case 1 -> data = dayOfMonth + " de janeiro de " + year;
+            case 2 -> data = dayOfMonth + " de fevereiro de " + year;
+            case 3 -> data = dayOfMonth + " de marco de " + year;
+            case 4 -> data = dayOfMonth + " de abril de " + year;
+            case 5 -> data = dayOfMonth + " de maio de " + year;
+            case 6 -> data = dayOfMonth + " de junho de " + year;
+            case 7 -> data = dayOfMonth + " de julho de " + year;
+            case 8 -> data = dayOfMonth + " de agosto de " + year;
+            case 9 -> data = dayOfMonth + " de setembro de " + year;
+            case 10 -> data = dayOfMonth + " de outubro de " + year;
+            case 11 -> data = dayOfMonth + " de novembro de " + year;
+            case 12 -> data = dayOfMonth + " de dezembro de " + year;
+            default -> data = "NUMERO INVALIDO!";
         }
+        return data;
     }
 
 }

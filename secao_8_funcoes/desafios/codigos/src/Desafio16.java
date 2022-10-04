@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -13,13 +15,15 @@ public class Desafio16 {
         System.out.println("Informe a quantidade: ");
         int quantidade = scanner.nextInt();
 
-        desenhaLinha(quantidade);
+        System.out.println(desenhaLinha(quantidade));
 
         scanner.close();
     }
 
-    private static void desenhaLinha(int quantidade) {
-        for (int i = 0; i < quantidade; i++) System.out.print("=");
+    private static List<String> desenhaLinha(int quantidade) {
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < quantidade; i++) list.add("=");
+        return list;
     }
 
 }
