@@ -73,9 +73,30 @@ public class Desafio69 {
     }
 
     private static String somaFracao(int p, int q, int p1, int q1) {
-        int a = q * q1;
-        int b = (a / q * p) + (a / q1 * p1);
-        return b + "/" + a;
+        int a = 0, b = 0, mmc;
+        if (q != q1) {
+            if (q1 < q) {
+                for (int i = q1; i > 0; i--) {
+                    if (q1 % i == 0 && q % i == 0) {
+                        a = q1 / i;
+                        b = q / i;
+                        break;
+                    }
+                }
+            } else {
+                for (int i = q; i > 0; i--) {
+                    if (q1 % i == 0 && q % i == 0) {
+                        a = q1 / i;
+                        b = q / i;
+                        break;
+                    }
+                }
+            }
+            mmc = a * b;
+            return (mmc / q * p) + (mmc / q1 * p1)  + "/" + mmc;
+        }
+
+        return p + p1 + "/" + q;
     }
 
     private static String maximoDivisorComum(int p, int q) {
