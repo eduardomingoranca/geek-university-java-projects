@@ -61,7 +61,7 @@ public class Desafio02 {
                         System.out.print("Informe o nome do contato: ");
                         String nome = scanner.nextLine();
 
-                        contato.removePessoa(nome);
+                        System.out.println(contato.removePessoa(nome));
 
                         System.out.print("\nDeseja remover outro contato? [S/N]");
                         continuar = scanner.nextLine();
@@ -114,7 +114,7 @@ public class Desafio02 {
 
                 case 5:
                     do {
-                        System.out.print("Informe o numero do contato que deseja imprimir: ");
+                        System.out.print("Informe o numero do contato que deseja imprimir [comece pelo zero]: ");
                         int n = Integer.parseInt(scanner.nextLine());
 
                         contato.imprimirPessoa(n);

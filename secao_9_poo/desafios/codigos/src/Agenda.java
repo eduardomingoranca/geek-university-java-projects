@@ -43,14 +43,15 @@ public class Agenda {
         } else System.out.println("Capacidade máxima de " +  agenda.size() + " atiginda.");
     }
 
-    public void removePessoa(String nome) {
+    public String removePessoa(String nome) {
         for (int j = 0; j < agenda.size(); j++) {
             if (Objects.equals(nome, agenda.get(j).getPessoa().getNome())){
                 agenda.remove(j);
                 names.remove(j);
-            System.out.println("\nO contato foi excluido com sucesso.");
-            } else System.out.println("\nO contato não está registrado na agenda!");
+                return "\nO contato foi excluido com sucesso.";
+            }
         }
+        return "\nO contato não está registrado na agenda!";
     }
 
     public int buscaPessoa(String nome) {
@@ -80,9 +81,9 @@ public class Agenda {
     }
 
     public void imprimirPessoa(int i) {
-        System.out.println("\nA agenda atualmente possui " + agenda.size() + " contatos.");
-        System.out.println("\nO contato " + names.get(i) + " cadastrado na posição " + (i+1) + ".");
-        System.out.println("\nPossui os seguintes dados: " + agenda.get(i));
+        System.out.println("\nA agenda atualmente possui " + agenda.size() + " contato(s).");
+        System.out.println("O contato " + names.get(i) + " cadastrado na posição " + i + ".");
+        System.out.println("Possui os seguintes dados: " + agenda.get(i));
     }
 
 }
