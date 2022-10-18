@@ -32,15 +32,11 @@ public class Agenda {
 
         System.out.println(contato.getPessoa().getNome() + "; " + contato.getPessoa().getIdade() + "; "
                 + contato.getPessoa().getAltura());
-        if (agenda.size() < 2) {
+        if (agenda.size() < 10) {
             agenda.add(contato);
             names.add(contato.getPessoa().getNome());
-            System.out.println(agenda.size() + " Contato Cadastrado.");
-        } else if (agenda.size() <= 9){
-            agenda.add(contato);
-            names.add(contato.getPessoa().getNome());
-            System.out.println(agenda.size() + " Contatos Cadastrados.");
-        } else System.out.println("Capacidade máxima de " +  agenda.size() + " atiginda.");
+            System.out.println(agenda.size() + " Contato(s) Cadastrado(s).");
+        } else System.out.println("Capacidade máxima de " +  agenda.size() + " foi atiginda.");
     }
 
     public String removePessoa(String nome) {
