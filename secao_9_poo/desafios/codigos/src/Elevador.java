@@ -28,39 +28,23 @@ public class Elevador {
     }
 
     public String entra(int quantidadePessoas) {
-        if (quantidadePessoas < getCapacidade()) {
-            this.quantidadePessoas += quantidadePessoas;
-            return "Adicionado com sucesso! total de pessoas eh de " + this.getQuantidadePessoas();
-        }
-
-        return "Nao pode adicionar mais pois ultrapassa a capacidade total";
+        this.quantidadePessoas += quantidadePessoas;
+        return "Adicionado com sucesso! total de pessoas eh de " + this.getQuantidadePessoas();
     }
 
     public String sai(int quantidadePessoas) {
-        if (getQuantidadePessoas() > 0) {
-            this.quantidadePessoas -= quantidadePessoas;
-            return "Removido com sucesso! total de pessoas eh de " + this.getQuantidadePessoas();
-        }
-
-        return "Nao pode ser removido por nao tem ninguem no elevador!";
+        this.quantidadePessoas -= quantidadePessoas;
+        return "Removido com sucesso! total de pessoas eh de " + this.getQuantidadePessoas();
     }
 
     public String sobe(int andarAtual) {
-        if (andarAtual <= getTotalAndares()) {
-            this.andarAtual = andarAtual;
-            return "Andar atual eh: " + getAndarAtual();
-        }
-
-        return "Nao pode subir mais ultimo andar!";
+        this.andarAtual = andarAtual;
+        return "Andar atual eh: " + getAndarAtual();
     }
 
     public String desce(int andarAtual) {
-        if (andarAtual >= 0) {
-            this.andarAtual = andarAtual;
-            return "Andar atual eh: " + getAndarAtual();
-        }
-
-        return "Nao pode descer mais que o primeiro andar!";
+        this.andarAtual = andarAtual;
+        return "Andar atual eh: " + getAndarAtual();
     }
 
 }
