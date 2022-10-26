@@ -3,6 +3,12 @@ import static java.lang.Math.pow;
 public class Quadrado {
     private Double lado;
 
+    public Quadrado() { }
+
+    public Quadrado(Double lado) {
+        this.lado = lado;
+    }
+
     public Double getLado() {
         return lado;
     }
