@@ -3,6 +3,14 @@ public class Pessoa {
     private String endereco;
     private Long telefone;
 
+    public Pessoa() { }
+
+    public Pessoa(String nome, String endereco, Long telefone) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+    }
+
     public String getNome() {
         return nome;
     }

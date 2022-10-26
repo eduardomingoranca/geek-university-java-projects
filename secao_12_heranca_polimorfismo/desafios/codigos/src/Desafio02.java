@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
 /**
- * Escreva um codigo em Java que apresente a classe Pessoa, com atributos nome,
- * endereco e telefone e, o metodo imprimir. O metodo imprimir deve mostrar na
- * tela os valores de todos os atributos.
+ * Baseando-se no exercicio 1 adicione um metodo construtor que permita a
+ * definicao de todos os atributos no momento da instanciacao do objeto.
  */
-public class Desafio01 {
+public class Desafio02 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -19,13 +18,9 @@ public class Desafio01 {
         System.out.print("Informe o telefone: ");
         long telefone = Long.parseLong(scanner.nextLine());
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome(nome);
-        pessoa.setEndereco(endereco);
-        pessoa.setTelefone(telefone);
-
-        System.out.println(pessoa.imprimePessoa());
+        System.out.println(new Pessoa(nome, endereco, telefone).imprimePessoa());
 
         scanner.close();
+
     }
 }
