@@ -13,16 +13,13 @@ public class Desafio03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Informe o lado do triagulo: ");
+        System.out.print("Informe o lado do triangulo: ");
         double lado = scanner.nextDouble();
 
         Quadrado quadrado = new Quadrado();
         quadrado.setLado(lado);
 
-        System.out.println("AREA: " + quadrado.calcularArea() +
-                "\nPERIMETRO: " + quadrado.calcularPerimetro() + "\n");
-
-        System.out.println(quadrado.imprimirQuadrado());
+        System.out.println(quadrado);
 
         scanner.close();
     }

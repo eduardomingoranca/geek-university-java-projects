@@ -9,10 +9,10 @@ public class Desafio04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Informe o lado do triagulo: ");
+        System.out.print("Informe o lado do triangulo: ");
         double lado = scanner.nextDouble();
 
-        System.out.println(new Quadrado(lado).imprimirQuadrado());
+        System.out.println(new Quadrado(lado));
 
         scanner.close();
 

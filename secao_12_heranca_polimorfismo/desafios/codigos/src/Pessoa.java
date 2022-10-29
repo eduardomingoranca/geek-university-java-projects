@@ -35,10 +35,13 @@ public class Pessoa {
         this.telefone = telefone;
     }
 
-    public String imprimePessoa() {
-        return "nome: " + getNome() + "\n" +
-                "endereco: " + getEndereco() + "\n" +
-                "telefone: " + getTelefone();
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + getNome() + '\'' +
+                ", endereco='" + getEndereco() + '\'' +
+                ", telefone=" + getTelefone() +
+                '}';
     }
 
 }

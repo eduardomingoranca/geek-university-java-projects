@@ -24,7 +24,7 @@ public class Desafio01 {
         pessoa.setEndereco(endereco);
         pessoa.setTelefone(telefone);
 
-        System.out.println(pessoa.imprimePessoa());
+        System.out.println(pessoa);
 
         scanner.close();
     }

@@ -17,15 +17,16 @@ public class Quadrado {
         this.lado = lado;
     }
 
-    public Double calcularArea() {
+    private Double calcularArea() {
         return pow(getLado(), 2.0);
     }
 
-    public Double calcularPerimetro() {
+    private Double calcularPerimetro() {
         return 4.0 * getLado();
     }
 
-    public String imprimirQuadrado() {
+    @Override
+    public String toString() {
         return "lado: " + this.getLado() + "\n" +
                 "area: " + this.calcularArea() + "\n" +
                 "perimetro: " + this.calcularPerimetro();

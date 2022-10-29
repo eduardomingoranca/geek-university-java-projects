@@ -18,7 +18,7 @@ public class Desafio02 {
         System.out.print("Informe o telefone: ");
         long telefone = Long.parseLong(scanner.nextLine());
 
-        System.out.println(new Pessoa(nome, endereco, telefone).imprimePessoa());
+        System.out.println(new Pessoa(nome, endereco, telefone));
 
         scanner.close();
 
