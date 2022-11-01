@@ -45,6 +45,26 @@ public class Moto {
         this.cor = cor;
     }
 
+    public void marchaAcima(int marcha) {
+        if (maiorMarcha(this.getMarcha() + marcha))
+            this.setMarcha(this.getMarcha() + marcha);
+        else System.out.println("MARCHA INVALIDA!");
+    }
+
+    public void marchaAbaixo(int marcha) {
+        if (menorMarcha(this.getMarcha() - marcha))
+            this.setMarcha(this.getMarcha() - marcha);
+        else System.out.println("MARCHA INVALIDA!");
+    }
+
+    private boolean maiorMarcha(int marcha) {
+        return marcha < 4;
+    }
+
+    private boolean menorMarcha(int marcha) {
+        return marcha > 0;
+    }
+
     @Override
     public String toString() {
         return "Moto{" +
