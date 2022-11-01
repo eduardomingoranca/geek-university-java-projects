@@ -3,6 +3,7 @@ public class Moto {
     private String modelo;
     private Integer marcha;
     private String cor;
+    private Boolean ligada;
 
     public Moto() { }
 
@@ -11,6 +12,14 @@ public class Moto {
         this.modelo = modelo;
         this.marcha = marcha;
         this.cor = cor;
+    }
+
+    public Moto(String marca, String modelo, Integer marcha, String cor, Boolean ligada) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.marcha = marcha;
+        this.cor = cor;
+        this.ligada = ligada;
     }
 
     public String getMarca() {
@@ -45,6 +54,14 @@ public class Moto {
         this.cor = cor;
     }
 
+    public Boolean getLigada() {
+        return ligada;
+    }
+
+    public void setLigada(Boolean ligada) {
+        this.ligada = ligada;
+    }
+
     public void marchaAcima(int marcha) {
         if (maiorMarcha(this.getMarcha() + marcha))
             this.setMarcha(this.getMarcha() + marcha);
@@ -72,6 +89,7 @@ public class Moto {
                 ", modelo='" + getModelo() + '\'' +
                 ", marcha=" + getMarcha() +
                 ", cor='" + getCor() + '\'' +
+                ", ligada=" +getLigada() +
                 '}';
     }
 
