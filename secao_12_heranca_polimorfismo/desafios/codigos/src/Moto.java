@@ -62,6 +62,14 @@ public class Moto {
         this.ligada = ligada;
     }
 
+    public void ligar(boolean ligar) {
+        this.setLigada(ligar);
+    }
+
+    public void desligar(boolean desligar) {
+        this.setLigada(desligar);
+    }
+
     public void marchaAcima(int marcha) {
         if (maiorMarcha(this.getMarcha() + marcha))
             this.setMarcha(this.getMarcha() + marcha);
