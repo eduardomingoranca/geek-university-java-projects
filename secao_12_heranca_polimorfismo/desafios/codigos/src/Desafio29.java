@@ -21,15 +21,13 @@ public class Desafio29 {
             System.out.println("O microondas esta ligado!");
 
             microondas.setPortaFechada(false);
-            if (microondas.getPortaFechada().equals(false))
-                System.out.println("A porta do microondas esta fechada!");
+            System.out.println("A porta do microondas esta fechada!");
         } else {
             microondas.desligar();
             System.out.println("O microondas esta desligado!");
 
             microondas.setPortaFechada(true);
-            if (microondas.getPortaFechada())
-                System.out.println("A porta do microondas esta aberta!");
+            System.out.println("A porta do microondas esta aberta!");
         }
 
         scanner.close();
