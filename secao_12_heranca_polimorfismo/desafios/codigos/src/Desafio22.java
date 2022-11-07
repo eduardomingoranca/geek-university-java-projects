@@ -22,12 +22,12 @@ public class Desafio22 {
             int volume = parseInt(scanner.nextLine());
 
             Televisor televisor = new Televisor(true, canal, volume);
-            televisor.ligar(true);
+            televisor.ligar();
 
             System.out.println(televisor);
         } else {
             Televisor televisor = new Televisor();
-            televisor.desligar(false);
+            televisor.desligar();
             System.out.println("A televisao esta desligada!");
         }
 

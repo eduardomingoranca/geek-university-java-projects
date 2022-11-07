@@ -53,12 +53,12 @@ public class Televisor {
         this.volumeMaximo = volumeMaximo;
     }
 
-    public void ligar(boolean ligar) {
-        this.setLigado(ligar);
+    public void ligar() {
+        this.setLigado(true);
     }
 
-    public void desligar(boolean desligar) {
-        this.setLigado(desligar);
+    public void desligar() {
+        this.setLigado(false);
     }
 
     public void canalAcima(int canal) {

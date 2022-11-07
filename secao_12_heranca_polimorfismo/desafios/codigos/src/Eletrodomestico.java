@@ -15,12 +15,12 @@ public class Eletrodomestico {
         this.ligado = ligado;
     }
 
-    public void ligar(boolean ligar) {
-        this.setLigado(ligar);
+    public void ligar() {
+        this.setLigado(true);
     }
 
-    public void desligar(boolean desligar) {
-        this.setLigado(desligar);
+    public void desligar() {
+        this.setLigado(false);
     }
 
     @Override

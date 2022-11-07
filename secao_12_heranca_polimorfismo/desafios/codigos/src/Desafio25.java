@@ -36,7 +36,7 @@ public class Desafio25 {
             televisor.setVolume(volume);
             televisor.setVolumeMaximo(volumeMaximo);
             televisor.setNumeroCanais(numeroCanais);
-            televisor.ligar(true);
+            televisor.ligar();
 
             System.out.print("Deseja aumentar o canal? [s/n]");
             String opcaoAcima =  scanner.nextLine();
@@ -76,7 +76,7 @@ public class Desafio25 {
 
             System.out.println(televisor);
         } else {
-            televisor.desligar(false);
+            televisor.desligar();
             System.out.println("A televisao esta desligada!");
         }
 

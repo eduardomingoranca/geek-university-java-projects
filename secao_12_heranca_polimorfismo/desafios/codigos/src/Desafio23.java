@@ -35,11 +35,11 @@ public class Desafio23 {
             televisor.setVolume(volume);
             televisor.setVolumeMaximo(volumeMaximo);
             televisor.setNumeroCanais(numeroCanais);
-            televisor.ligar(true);
+            televisor.ligar();
 
             System.out.println(televisor);
         } else {
-            televisor.desligar(false);
+            televisor.desligar();
             System.out.println("A televisao esta desligada!");
         }
 

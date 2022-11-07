@@ -62,12 +62,12 @@ public class Moto {
         this.ligada = ligada;
     }
 
-    public void ligar(boolean ligar) {
-        this.setLigada(ligar);
+    public void ligar() {
+        this.setLigada(true);
     }
 
-    public void desligar(boolean desligar) {
-        this.setLigada(desligar);
+    public void desligar() {
+        this.setLigada(false);
     }
 
     public void marchaAcima(int marcha) {
@@ -97,7 +97,7 @@ public class Moto {
                 ", modelo='" + getModelo() + '\'' +
                 ", marcha=" + getMarcha() +
                 ", cor='" + getCor() + '\'' +
-                ", ligada=" +getLigada() +
+                ", ligada=" + getLigada() +
                 '}';
     }
 

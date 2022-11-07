@@ -30,11 +30,11 @@ public class Desafio16 {
 
         if (ligada.equalsIgnoreCase("s")) {
             System.out.println("A moto esta ligada!");
-            moto.ligar(true);
+            moto.ligar();
             System.out.println(moto);
         } else {
             System.out.println("A moto esta desligada!");
-            moto.desligar(false);
+            moto.desligar();
             System.out.println(moto);
         }
 

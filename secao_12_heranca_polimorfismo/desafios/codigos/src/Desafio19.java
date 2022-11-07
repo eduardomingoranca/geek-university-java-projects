@@ -15,11 +15,11 @@ public class Desafio19 {
         Eletrodomestico eletrodomestico = new Eletrodomestico();
         if (ligado.equalsIgnoreCase("s")) {
             System.out.println("O eletrodomestico esta ligado!");
-            eletrodomestico.ligar(true);
+            eletrodomestico.ligar();
             System.out.println(eletrodomestico);
         } else {
             System.out.println("O eletrodomestico esta desligado!");
-            eletrodomestico.desligar(false);
+            eletrodomestico.desligar();
             System.out.println(eletrodomestico);
         }
 
