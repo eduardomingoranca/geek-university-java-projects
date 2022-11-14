@@ -1,0 +1,5 @@
+Montgomery  100
+Juneau      200
+Phoenix     300
+Little Rock 400
+Sacramento  500
