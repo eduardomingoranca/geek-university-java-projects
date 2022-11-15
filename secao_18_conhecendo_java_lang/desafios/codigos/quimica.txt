@@ -1,0 +1,2 @@
+Abraham     10.0
+Isaac       7.50

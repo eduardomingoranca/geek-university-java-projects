@@ -1,0 +1,3 @@
+Macarrao    R$ 6.90
+Arroz       R$ 4.50
+Feijao      R$ 3.00

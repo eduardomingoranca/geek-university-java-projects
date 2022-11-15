@@ -1,0 +1,4 @@
+Moses
+10.0
+Joshua
+9.5

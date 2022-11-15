@@ -5,6 +5,7 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 import static java.lang.Integer.MIN_VALUE;
+import static java.lang.Integer.parseInt;
 
 /**
  * Faca um programa que receba o nome de um arquivo de entrada e outro de saida. O
@@ -24,7 +25,7 @@ public class Desafio10 {
             int bigger = MIN_VALUE;
             while (read.hasNextLine()) {
                 String line = read.nextLine();
-                int numberOfInhabitants = Integer.parseInt(line.substring(12, 15));
+                int numberOfInhabitants = parseInt(line.substring(12, 15));
 
                 if (numberOfInhabitants > bigger) {
                     bigger = numberOfInhabitants;
@@ -33,7 +34,7 @@ public class Desafio10 {
             }
 
             assert lines != null;
-            if (bigger == Integer.parseInt(lines.substring(12, 15))) {
+            if (bigger == parseInt(lines.substring(12, 15))) {
                 PrintStream writer = new PrintStream(new FileOutputStream("exit.txt", true));
                 writer.println(lines);
             }
