@@ -102,19 +102,19 @@ public class Desafio06 {
             }
 
             System.out.println("=============== TOTAIS =================");
-            System.out.println("A: " + quantidadeA + " B: " + quantidadeB);
-            System.out.println("C: " + quantidadeC + " D: " + quantidadeD);
-            System.out.println("E: " + quantidadeE + " F: " + quantidadeF);
-            System.out.println("G: " + quantidadeG + " H: " + quantidadeH);
-            System.out.println("I: " + quantidadeI + " J: " + quantidadeJ);
-            System.out.println("K: " + quantidadeK + " L: " + quantidadeL);
-            System.out.println("M: " + quantidadeM + " N: " + quantidadeN);
-            System.out.println("O: " + quantidadeO + " P: " + quantidadeP);
-            System.out.println("Q: " + quantidadeQ + " R: " + quantidadeR);
-            System.out.println("S: " + quantidadeS + " T: " + quantidadeT);
-            System.out.println("U: " + quantidadeU + " V: " + quantidadeV);
-            System.out.println("W: " + quantidadeW + " X: " + quantidadeX);
-            System.out.println("Y: " + quantidadeY + " Z: " + quantidadeZ);
+            System.out.println("A= " + quantidadeA + " B= " + quantidadeB);
+            System.out.println("C= " + quantidadeC + " D= " + quantidadeD);
+            System.out.println("E= " + quantidadeE + " F= " + quantidadeF);
+            System.out.println("G= " + quantidadeG + " H= " + quantidadeH);
+            System.out.println("I= " + quantidadeI + " J= " + quantidadeJ);
+            System.out.println("K= " + quantidadeK + " L= " + quantidadeL);
+            System.out.println("M= " + quantidadeM + " N= " + quantidadeN);
+            System.out.println("O= " + quantidadeO + " P= " + quantidadeP);
+            System.out.println("Q= " + quantidadeQ + " R= " + quantidadeR);
+            System.out.println("S= " + quantidadeS + " T= " + quantidadeT);
+            System.out.println("U= " + quantidadeU + " V= " + quantidadeV);
+            System.out.println("W= " + quantidadeW + " X= " + quantidadeX);
+            System.out.println("Y= " + quantidadeY + " Z= " + quantidadeZ);
 
             read.close();
         } catch (FileNotFoundException e) {
