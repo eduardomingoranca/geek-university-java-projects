@@ -1,0 +1,5 @@
+Advogado 6
+Economista 4
+Engenheiro 9
+Medico 8
+Professor 3

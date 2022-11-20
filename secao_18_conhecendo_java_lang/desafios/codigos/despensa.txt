@@ -1,0 +1,4 @@
+01  Manteiga    3
+02  Arroz       5
+03  Feijao      6
+04  Oleo        2
