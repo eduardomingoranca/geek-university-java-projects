@@ -105,7 +105,8 @@ public class Desafio25 {
                         if (numeroMes == mes) {
                             System.out.println(currentLine);
                         }
-                    }}
+                    }
+                }
             } else System.out.println("OPCAO INVALIDA!");
 
         } catch (FileNotFoundException e) {
